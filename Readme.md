@@ -15,3 +15,5 @@ npm install
 
 npm start
 ```
+
+![](https://user-images.githubusercontent.com/62604902/95679903-6a1a5080-0bf3-11eb-828a-e56cb815abd4.png)
