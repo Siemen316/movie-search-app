@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Dark from './Dark';
 const NavBar = () => {
   return (
     <nav>
@@ -15,7 +14,6 @@ const NavBar = () => {
         <li>
           <Link to="/about">ABOUT</Link>
         </li>
-        <Dark />
       </ul>
     </nav>
   );

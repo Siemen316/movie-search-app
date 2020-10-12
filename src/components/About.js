@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div style={{ textAlign: 'center' }}>
+    <div style={{ textAlign: 'center', color: '#fff' }}>
       <p>BUILT WITH REACT</p>
       <p style={{ fontSize: '1.3rem' }}>
         USING THE{' '}
