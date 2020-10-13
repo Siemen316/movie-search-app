@@ -63,7 +63,6 @@ form {
   padding: 0.3rem;
   border: 1px solid black;
   height: 1.3rem;
-  text-transform: capitalize;
 }
 .btn {
   width: 6rem;
@@ -165,6 +164,24 @@ img {
   animation: spin 2s linear infinite;
 }
 
+.welcome {
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn3 {
+  width: 10rem;
+  outline: none;
+  border: none;
+  color: #fff;
+  background-color: hsl(217deg 99% 65%);
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -189,5 +206,15 @@ img {
   }
   .modal {
     width: 18rem;
+  }
+  .welcome h2 {
+    font-size: 1rem;
+  }
+  .welcome img {
+    display: none;
+  }
+  .btn3 {
+    font-size: 1rem;
+    padding: 0.8rem;
   }
 }

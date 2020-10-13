@@ -13,8 +13,8 @@ function App() {
         <NavBar />
         <Switch>
           <Route path="/" component={MovieSearch} exact />
-          <Route path="/about" component={About} />
-          <Route path="/movie/:id" component={MovieInfo} />
+          <Route path="/about" component={About} exact />
+          <Route path="/movie/:id" component={MovieInfo} exact />
           <Route path="*" component={Error} />
         </Switch>
       </Router>

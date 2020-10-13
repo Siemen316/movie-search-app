@@ -3,8 +3,11 @@ import axios from 'axios';
 import MoviList from './MoviList';
 import Modal from './Modal';
 import Loading from './Loading';
+import Welcome from './Welcome';
 import { reducer } from './reducer';
+
 const initialState = {
+  initialMsg: true,
   movies: [],
   isLoading: false,
   isModal: false,
@@ -38,7 +41,6 @@ const MovieSearch = () => {
   const modalFun = () => {
     dispatch({ type: 'MODAL_FUN' });
   };
-
   return (
     <>
       <form onSubmit={handleSubmit}>
@@ -46,6 +48,7 @@ const MovieSearch = () => {
           className="txt"
           type="text"
           value={inputValue}
+          placeholder="Search movies.."
           onChange={(e) => setInputValue(e.target.value)}
         />
         <button className="btn">SEARCH</button>
@@ -56,12 +59,12 @@ const MovieSearch = () => {
       ) : null}
 
       {state.isLoading ? <Loading /> : null}
-
       <div className="cards">
         {state.movies.map((movie) => {
           return <MoviList key={movie.imdbID} movieList={movie} />;
         })}
       </div>
+      {state.initialMsg ? <Welcome /> : null}
     </>
   );
 };

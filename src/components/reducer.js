@@ -2,11 +2,13 @@ export const reducer = (state, action) => {
   switch (action.type) {
     case 'LOADING':
       return {
+        initialMsg: false,
         movies: [],
         isLoading: true,
       };
     case 'SUCCESS':
       return {
+        initialMsg: false,
         movies: action.payload,
         isLoading: false,
         isModal: false,
@@ -14,6 +16,7 @@ export const reducer = (state, action) => {
       };
     case 'ALERT_MSG':
       return {
+        initialMsg: true,
         movies: [],
         isLoading: false,
         isModal: true,
@@ -21,6 +24,7 @@ export const reducer = (state, action) => {
       };
     case 'INVALID_MOVIE':
       return {
+        initialMsg: true,
         movies: [],
         isLoading: false,
         isModal: true,
@@ -33,6 +37,7 @@ export const reducer = (state, action) => {
       };
     case 'ERROR':
       return {
+        initialMsg: true,
         movies: [],
         isLoading: false,
         isModal: true,
