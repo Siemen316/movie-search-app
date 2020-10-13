@@ -1,4 +1,4 @@
-# MoviesSearch App
+# MoviesSearch App :rocket:
 
 The app uses React for rendering real time search results for all your favorite movies.
 
@@ -16,4 +16,4 @@ npm install
 npm start
 ```
 
-![](https://user-images.githubusercontent.com/62604902/95742195-3ef43780-0cad-11eb-8a30-d3ebffc158e4.png)
+![](https://user-images.githubusercontent.com/62604902/95895451-4ea47680-0da8-11eb-97a6-ff489e7d39b3.png)
